@@ -3,7 +3,13 @@
 # An array arr = [2, 7, 11, 15]
 # A target sum target = 9
 # 👉 Output: [0, 1] because 2 + 7 = 9
+# 🌟 Which one is better?
 
+# ✔ If array is unsorted → HashMap
+
+# ✔ If array is sorted → Two Pointer
+
+# ❌ Don’t sort an array just to use two pointers → sorting adds O(n log n) extra cost.
 arr=list(map(int,input("enter array elements :- ").split(" ")))
 target=int(input("enter target :- "))
 
