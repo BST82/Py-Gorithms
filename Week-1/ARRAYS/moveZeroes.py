@@ -13,8 +13,27 @@ class Sol():
                 j+=1
         return arr
 
+    def moveZerosOnLeft(self,arr):
+        j=len(arr)-1
+
+        for i in range(len(arr)-1,-1,-1):
+            if arr[i]!=0:
+                arr[j]=arr[i]
+                j-=1
+        
+        while j>=0:
+            arr[j]=0
+            j-=1
+
+        return arr
+
+
+
+
 
 
 ans=Sol()
 hasAns=ans.moveZeros(arr)
+hasAns2=ans.moveZerosOnLeft(arr.copy())
 print(hasAns)
+print(hasAns2)
